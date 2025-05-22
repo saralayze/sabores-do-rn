@@ -1,0 +1,153 @@
+/* Estilos compartilhados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #daa520;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  background-image: linear-gradient(to right, #daa520, #f4a460);
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navegação */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #daa520;
+}
+
+/* Conteúdo da Receita */
+.receita {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.receita-cabecalho {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.receita-imagem {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.receita h2 {
+  font-family: "Playfair Display", serif;
+  color: #daa520;
+  margin-bottom: 0.5rem;
+}
+
+.receita-descricao {
+  color: #666;
+  font-style: italic;
+}
+
+.receita-conteudo {
+  padding: 1.5rem;
+}
+
+.receita-conteudo section {
+  margin-bottom: 2rem;
+}
+
+.receita-conteudo h3 {
+  font-family: "Playfair Display", serif;
+  color: #daa520;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.ingredientes ul,
+.modo-preparo ol {
+  margin-left: 1.5rem;
+}
+
+.ingredientes li,
+.modo-preparo li {
+  margin-bottom: 0.5rem;
+}
+
+.historia p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .receita-imagem {
+    max-height: 300px;
+  }
+}

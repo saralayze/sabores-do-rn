@@ -1,0 +1,152 @@
+/* Reset e Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #daa520;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  background-image: linear-gradient(to right, #daa520, #f4a460);
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navegação */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #daa520;
+}
+
+/* Conteúdo Principal */
+.destaque {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.destaque h2 {
+  font-family: "Playfair Display", serif;
+  color: #daa520;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid de Receitas */
+.receitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card-receita {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card-receita:hover {
+  transform: translateY(-5px);
+}
+
+.card-receita img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-receita h3 {
+  padding: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.card-receita a {
+  text-decoration: none;
+}
+
+/* Seção Sobre */
+.sobre {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  border-top: 1px solid #eee;
+}
+
+.sobre h2 {
+  font-family: "Playfair Display", serif;
+  color: #daa520;
+  margin-bottom: 1rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .receitas-grid {
+    grid-template-columns: 1fr;
+  }
+}
